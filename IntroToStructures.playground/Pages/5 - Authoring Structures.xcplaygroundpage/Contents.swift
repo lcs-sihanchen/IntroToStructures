@@ -37,7 +37,7 @@ struct Parallelogram {
     // MARK: Properties
     var base: Double
     var height: Double
-    
+    var sidelength: Double
     // MARK: For Return
     
     var area: Double {
@@ -45,12 +45,20 @@ struct Parallelogram {
         return base * height
     }
     
+    var circumference: Double {
+        
+        return sidelength * 2 + base * 2
+    }
     
     
 }
 
-let shape1 = Parallelogram(base: 10, height: 15)
+let shape1 = Parallelogram(base: 10, height: 15, sidelength: 10)
+
 shape1.area
+shape1.circumference
+
+
 
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
