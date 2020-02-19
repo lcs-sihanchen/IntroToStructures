@@ -109,7 +109,19 @@ struct Circle {
     }
 }
 
+let circle1 = Circle(radius: 10)
 
+// Area of the shape
+circle1.area
+
+// Circumference of the shape
+circle1.circumference
+
+// Describe the area in words
+circle1.areaDescription
+
+// Describe the circumference in words
+circle1.circumferenceDescription
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
  */
