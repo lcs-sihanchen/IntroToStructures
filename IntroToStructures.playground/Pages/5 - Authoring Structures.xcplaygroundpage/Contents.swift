@@ -50,14 +50,17 @@ struct Parallelogram {
         return sidelength * 2 + base * 2
     }
     
-    
+    var areadescription: String {
+        
+        return "The area of the rectangle is " + String(format: "%.1f", area) + " square units."
+    }
 }
 
 let shape1 = Parallelogram(base: 10, height: 15, sidelength: 10)
 
 shape1.area
 shape1.circumference
-
+shape1.areadescription
 
 
 /*:
