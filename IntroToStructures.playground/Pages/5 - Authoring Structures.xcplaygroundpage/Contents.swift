@@ -89,7 +89,7 @@ struct Circle {
     
     // MARK: Ask For Return
     var area: Double {
-        return radius * radius * Double.pi
+        return pow(radius, 2) * Double.pi
     }
     
     var circumference: Double {
@@ -122,6 +122,59 @@ circle1.areaDescription
 
 // Describe the circumference in words
 circle1.circumferenceDescription
+
+
+
+
+struct Cylinder {
+    
+    // MARK: Properties
+    var radius: Double
+    var height: Double
+    
+    // MARK: Ask For Return
+    var baseArea: Double {
+        
+        return pow(radius, 2) * Double.pi
+    }
+    
+    var lateralSurface: Double {
+        
+        return 2 * Double.pi * radius * height
+    }
+    
+    var totalArea: Double {
+        
+        return baseArea * 2 + lateralSurface
+    }
+    
+    var volume: Double {
+        
+        return baseArea * height
+    }
+    
+    
+    var areaDescription: String {
+        
+        return "The area of the base is " + String(format: "%.1f", baseArea) + " square units." + "\n" + "The area of the lateral surface is " + String(format: "%.1f", lateralSurface) + " square units."
+    }
+    
+    var volumeDescription: String {
+        
+        return "The volume of the cylinder is " + String(format: "%.1f", volume) + " cube units."
+    }
+}
+
+
+struct TriangularPrism {
+    var sideA: Double
+    var sideB: Double 
+}
+
+
+
+
+
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
  */
