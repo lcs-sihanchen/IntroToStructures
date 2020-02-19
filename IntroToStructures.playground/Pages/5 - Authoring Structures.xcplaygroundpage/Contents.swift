@@ -50,17 +50,41 @@ struct Parallelogram {
         return sidelength * 2 + base * 2
     }
     
-    var areadescription: String {
+    var areaDescription: String {
         
-        return "The area of the rectangle is " + String(format: "%.1f", area) + " square units."
+        return "The area of the parallelogram is " + String(format: "%.1f", area) + " square units."
+    }
+    
+    var circumferenceDescription: String {
+        
+        return "The circumference of the parallelograms is " + String(format: "%.1f", circumference)
     }
 }
 
 let shape1 = Parallelogram(base: 10, height: 15, sidelength: 10)
 
+// Area of the shape
 shape1.area
+
+// Circumference of the shape
 shape1.circumference
-shape1.areadescription
+
+// Describe the area in words
+shape1.areaDescription
+
+// Describe the circumference in words
+shape1.circumferenceDescription
+
+
+
+
+
+
+
+struct Circle {
+    
+    
+}
 
 
 /*:
