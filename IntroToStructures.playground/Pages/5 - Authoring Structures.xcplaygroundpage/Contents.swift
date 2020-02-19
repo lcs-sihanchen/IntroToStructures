@@ -32,8 +32,25 @@ import Foundation
  
  */
 // Begin your work here...
+struct Parallelogram {
+    
+    // MARK: Properties
+    var base: Double
+    var height: Double
+    
+    // MARK: For Return
+    
+    var area: Double {
+        
+        return base * height
+    }
+    
+    
+    
+}
 
-
+let shape1 = Parallelogram(base: 10, height: 15)
+shape1.area
 
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
