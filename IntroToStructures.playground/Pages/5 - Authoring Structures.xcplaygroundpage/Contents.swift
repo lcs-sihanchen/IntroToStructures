@@ -165,12 +165,82 @@ struct Cylinder {
     }
 }
 
+let cylinder1 = Cylinder(radius: 10, height: 10)
 
+// Base area of the 3D shape
+cylinder1.baseArea
+
+// Lateral surface of the 3D shape
+cylinder1.lateralSurface
+
+// Volume of the 3D shape
+cylinder1.volume
+
+// Describe the area in words
+cylinder1.areaDescription
+
+// Describe the volume in words
+cylinder1.volumeDescription
+
+
+
+/*:
+
+
+ 
+ */
 struct TriangularPrism {
+    // MARK: Properties
     var sideA: Double
-    var sideB: Double 
+    var sideB: Double
+    var sideC: Double
+    var bottomAltitude: Double
+    var height: Double
+    
+    // MARK: Ask For Return
+    var baseArea: Double {
+        
+        return sideB * bottomAltitude / 2
+        
+    }
+    
+    var lateralSurface: Double {
+        
+        return sideA * height + sideB * height + sideC * height
+    }
+    
+    var volume: Double {
+        
+        return sideB * bottomAltitude * height / 3
+    }
+    
+    var areaDescription: String {
+        
+        return "The area of the base is " + String(format: "%.1f", baseArea) + " square units." + "\n" + "The area of the lateral surface is " + String(format: "%.1f", lateralSurface) + " square units."
+    }
+    
+    var volumeDescription: String {
+        
+        return "The volume of the cylinder is " + String(format: "%.1f", volume) + " cube units."
+    }
 }
 
+let triangularPrism1 = TriangularPrism(sideA: 10, sideB: 5, sideC: 10, bottomAltitude: 5, height: 20)
+
+// Base area of the 3D shape
+triangularPrism1.baseArea
+
+// Lateral surface of the 3D shape
+triangularPrism1.lateralSurface
+
+// Volume of the 3D shape
+triangularPrism1.volume
+
+// Describe the area in words
+triangularPrism1.areaDescription
+
+// Describe the volume in words
+triangularPrism1.volumeDescription
 
 
 
