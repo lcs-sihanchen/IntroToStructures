@@ -64,9 +64,11 @@ struct Parallelogram {
 let shape1 = Parallelogram(base: 10, height: 15, sidelength: 10)
 
 // Area of the shape
+// Result 150
 shape1.area
 
 // Circumference of the shape
+// Result 40
 shape1.circumference
 
 // Describe the area in words
@@ -112,9 +114,11 @@ struct Circle {
 let circle1 = Circle(radius: 10)
 
 // Area of the shape
+// Result 100pi
 circle1.area
 
 // Circumference of the shape
+// Result 20pi
 circle1.circumference
 
 // Describe the area in words
@@ -168,12 +172,15 @@ struct Cylinder {
 let cylinder1 = Cylinder(radius: 10, height: 10)
 
 // Base area of the 3D shape
+// Result 100pi
 cylinder1.baseArea
 
 // Lateral surface of the 3D shape
+// Result 200pi
 cylinder1.lateralSurface
 
 // Volume of the 3D shape
+// Result 1000pi
 cylinder1.volume
 
 // Describe the area in words
@@ -228,12 +235,15 @@ struct TriangularPrism {
 let triangularPrism1 = TriangularPrism(sideA: 10, sideB: 5, sideC: 10, bottomAltitude: 5, height: 20)
 
 // Base area of the 3D shape
+// Result 12.5
 triangularPrism1.baseArea
 
 // Lateral surface of the 3D shape
+// Result 500
 triangularPrism1.lateralSurface
 
 // Volume of the 3D shape
+// Result 166+2/3
 triangularPrism1.volume
 
 // Describe the area in words
